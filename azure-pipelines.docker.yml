@@ -6,6 +6,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   imageName: 'dotnetcore:$(Build.BuildId)'
+  dockerId: 'senthil'
   # define two more variables dockerId and dockerPassword in the build pipeline in UI
 
 steps:
