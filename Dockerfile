@@ -7,7 +7,7 @@ FROM microsoft/aspnetcore:2.0
 
 # Create app directory
 WORKDIR /app
-RUN RUN echo $(ls -1 /app)
+RUN echo $(ls -1 /app)
 # Copy files from the artifact staging folder on agent
 RUN pwd
 COPY dotnetcore-sample/out .
