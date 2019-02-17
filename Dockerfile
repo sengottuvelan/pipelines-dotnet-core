@@ -10,6 +10,6 @@ WORKDIR /app
 RUN echo $(ls -1 /app)
 # Copy files from the artifact staging folder on agent
 RUN pwd
-COPY dotnetcore-sample/out .
+COPY /app/dotnetcore-sample/out .
 
 ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
